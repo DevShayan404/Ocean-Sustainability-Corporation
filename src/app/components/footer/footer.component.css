@@ -1,6 +1,12 @@
 /* Footer Area
 ======================== */
-
+.solution-item {
+  display: inline-block;
+  max-width: 100%; /* Adjust the width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 .footer-area {
   background: var(--secondary-color);
   color: #fff;

@@ -21,8 +21,8 @@
               Ocean Sustainability Corporation LLC (OSC) is fully committed to
               introducing quality and cost-effective engineering product-based
               solutions and specialized services from well-renowned Packagers,
-              OEMs, and consultants in Pakistan’s Oil & Gas Sector, Refineries,
-              and Petrochemical Industries.
+              OEMs, and consultants in Gulf and Pakistan’s Oil & Gas Sector,
+              Refineries, and Petrochemical Industries.
             </p>
             <div class="row banner-button">
               <button
@@ -122,11 +122,14 @@
               data-aos-duration="2000"
             >
               <div class="col-lg-4 col-md-6 col-12">
-                <div class="years"><span>25</span>Year of Success</div>
+                <div class="years">
+                  <span>{{ yearsOfWork }}</span
+                  >Year of Success
+                </div>
               </div>
               <div class="col-lg-8 col-md-6 col-12">
                 <div class="text">
-                  Since we established in 1995 experience &amp; still a growing
+                  Since we established in 1999 experience &amp; still a growing
                   protfolio day by day!
                 </div>
               </div>
@@ -170,18 +173,18 @@
             </div>
           </div>
           <div class="text-holder">
-            <div class="icon">
+            <!-- <div class="icon">
               <img
                 width="40"
                 height="40"
                 src="assets\icons\factory.png"
                 alt=""
               />
-            </div>
-            <div class="text">
-              <h5>{{ item?.name }}</h5>
-              <p>Solution we provide.</p>
-            </div>
+            </div> -->
+            <!-- <div > -->
+            <h5>{{ item?.name }}</h5>
+            <p>Solution we provide.</p>
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -196,8 +199,8 @@
   <div class="container">
     <!-- Our Factory -->
     <div class="our-factory">
-      <div class="row">
-        <div class="content-column col-lg-6 col-md-12 col-sm-12">
+      <div class="row g-0">
+        <div class="content-column col-lg-6 col-md-12 col-sm-12 pb-2">
           <div class="info-content-area">
             <div
               class="section-title"
@@ -205,7 +208,7 @@
               data-aos-duration="1000"
             >
               <h6>SERVICE</h6>
-              <h2>We Provide a Best Service</h2>
+              <h2>We Provide the Best Service</h2>
             </div>
             <!-- <p data-aos="fade-up-right" data-aos-duration="1500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -261,24 +264,16 @@
           </div>
         </div>
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
-          <div
-            class="image-box wow fadeIn animated"
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          >
-            <figure class="image">
-              <a href="assets\images\our-company.jpg" class="lightbox-image"
-                ><img src="assets\images\our-company.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
+          <figure class="image" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="assets\images\our-company.jpg" alt="" />
+          </figure>
         </div>
       </div>
     </div>
 
     <!-- Our Skill -->
     <div class="our-skill">
-      <div class="row">
+      <div class="row g-0">
         <div class="content-column order-2 col-lg-6 col-md-12 col-sm-12">
           <div class="info-content-area">
             <div
@@ -335,17 +330,9 @@
         </div>
 
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
-          <div
-            class="image-box wow fadeIn animated"
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          >
-            <figure class="image">
-              <a href="assets\images\our-skill.jpg" class="lightbox-image"
-                ><img src="assets\images\our-skill.jpg" alt=""
-              /></a>
-            </figure>
-          </div>
+          <figure class="image" data-aos="zoom-in" data-aos-duration="2000">
+            <img src="assets\images\our-skill.jpg" alt="" />
+          </figure>
         </div>
       </div>
     </div>
@@ -476,10 +463,10 @@
     <div class="overlay"></div>
     <div class="container" style="z-index: 2">
       <div class="row align-items-center gy-3">
-        <div class="col-lg-5 col-md-5 col-12">
+        <div class="col-lg-6 col-md-6 col-12">
           <h2>Let's Get Your Project Started Today!</h2>
         </div>
-        <div class="col-lg-6 offset-lg-1 col-md-6 offset-md-1 col-12">
+        <!-- <div class="col-lg-6 col-md-6  col-12">
           <div class="contact-info">
             <div class="row">
               <div class="col-lg-6">
@@ -498,7 +485,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

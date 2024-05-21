@@ -96,6 +96,14 @@ export class HomeComponent {
     },
     {
       src: 'assets/logos/16.png',
-    }
+    },
   ];
+
+  startYear: number = 1999;
+  yearsOfWork!: number;
+  ngOnInit() {
+    const currentYear = new Date().getFullYear();
+    this.yearsOfWork = currentYear - this.startYear;
+    console.log(this.yearsOfWork);
+  }
 }
