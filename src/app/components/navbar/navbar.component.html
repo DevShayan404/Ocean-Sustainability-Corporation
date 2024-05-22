@@ -1,9 +1,10 @@
+@if (isVisibleNavheader) {
 <div class="header-top">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12">
         <div class="contact-info">
-          <i class="bi bi-envelope"></i> info&#64;oceansuscorp.com 
+          <i class="bi bi-envelope"></i> info&#64;oceansuscorp.com
           <!-- | -->
           <!-- <i class="bi bi-geo-alt"></i> 66, Broklyn St, New York, USA -->
         </div>
@@ -22,20 +23,21 @@
     </div>
   </div>
 </div>
+}
 <header class="header-area" appNavbarScroll [ngClass]="{ scrolled: scrolled }">
   <div id="sticky-wrapper" class="sticky-wrapper">
     <div class="sticky-area">
       <div class="navigation">
         <div class="container">
           <div class="row d-flex align-items-center">
-            <div class="col-lg-1">
+            <div class="col-lg-3">
               <div class="logo">
                 <a aria-current="page" routerLink=""
-                  ><img src="assets\images\OSC-Logo-nav.png" alt=""
+                  ><img width="200" src="assets\images\osc-logo.png" alt=""
                 /></a>
               </div>
             </div>
-            <div class="col-lg-8 ps-5">
+            <div class="col-lg-6 ps-5">
               <div class="main-menu">
                 <nav class="navbar navbar-expand-lg">
                   <!-- <button
@@ -82,7 +84,7 @@
                         <a routerLink="about-us" class="nav-link">About</a>
                       </li>
                       <li class="nav-item">
-                        <a  class="nav-link">Contact</a>
+                        <a routerLink="contact-us" class="nav-link">Contact</a>
                       </li>
                       <li class="nav-item">
                         <a class="nav-link">FAQ</a>
@@ -94,7 +96,9 @@
             </div>
             <div class="col-lg-3 text-end">
               <div class="header-right-content">
-                <a href="/contact" class="header-btn btn-fill">Get a Quote</a>
+                <a routerLink="contact-us" class="header-btn btn-fill"
+                  >Get a Quote</a
+                >
               </div>
             </div>
           </div>

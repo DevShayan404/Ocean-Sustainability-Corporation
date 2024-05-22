@@ -2,13 +2,13 @@
 ============== */
 
 .breadcroumb-area {
-  background-image: url("../../../assets/images/banner2.jpg");
+  background-image: url("../../../assets/images/bg-secondary.jpg");
 }
 
 .breadcroumb-area {
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
-  background-position: center;
+  background-position: center bottom;
   background-color: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,13 +71,11 @@
     font-size: 35px;
   }
 }
-
-/* //// */
 /* Contact Page  
 ============== */
 
 .contact-us-area {
-  /* background-image: url(../img/choose-us-bg-2.jpg); */
+  background-image: url("../../../assets/images/choose-us-bg-2.jpg");
   background-size: cover;
   height: 500px;
   position: relative;
@@ -103,7 +101,9 @@
 .contact-us-inner h5 {
   margin: 40px 0 20px;
 }
-
+.contact-us-inner p {
+  text-align: center;
+}
 .contact-us-inner a {
   text-transform: uppercase;
   color: #f35c27;
@@ -125,18 +125,19 @@
 #contact-us .contact-form .main-btn {
   margin-top: 30px;
 }
-/*  */
+
 /* Contact Section 
 ==================== 
 */
 
 .contact-section {
-  /* background-image: url(../img/contact-bg.jpg); */
+  background-image: url("../../../assets/images/contact-bg.png");
+  /* height: 80vh; */
   background-attachment: fixed;
-}
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.contact-content {
-  margin-top: 50px;
 }
 
 .contact-section h2 {

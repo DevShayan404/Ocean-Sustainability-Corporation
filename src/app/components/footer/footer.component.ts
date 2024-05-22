@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component } from '@angular/core';
+import { SharingService } from '../../core/services/sharing-data/sharing.service';
 
 @Component({
   selector: 'app-footer',
@@ -38,4 +39,18 @@ export class FooterComponent {
       name: 'Heavy Duty Fans / Blowers and Compressors',
     },
   ];
+
+  footerSectionHide!: boolean;
+  constructor(
+    private sharingService: SharingService,
+    private cdr: ChangeDetectorRef
+  ) {}
+  ngOnInit(): void {
+    this.sharingService.getFooterSectionVisible().subscribe({
+      next: (data) => {
+        this.footerSectionHide = data;
+        this.cdr.detectChanges();
+      },
+    });
+  }
 }

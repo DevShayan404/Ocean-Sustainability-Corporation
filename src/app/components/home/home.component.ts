@@ -104,6 +104,5 @@ export class HomeComponent {
   ngOnInit() {
     const currentYear = new Date().getFullYear();
     this.yearsOfWork = currentYear - this.startYear;
-    console.log(this.yearsOfWork);
   }
 }
