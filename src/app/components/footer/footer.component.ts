@@ -10,7 +10,7 @@ export class FooterComponent {
     {
       id: 1,
       src: 'assets/images/service1.jpg',
-      name: 'Demineralization & Condenstae Recovery',
+      name: 'Demineralization & Condensation Recovery',
     },
     {
       id: 2,

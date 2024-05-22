@@ -18,11 +18,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   solutionList = [
     {
-      id: 1,
-      src: 'assets/images/service1.jpg',
-      name: 'Demineralization & Condenstae Recovery',
-    },
-    {
       id: 2,
       src: 'assets/images/service2.jpg',
       name: 'Demineralization by EDR',
@@ -36,6 +31,11 @@ export class HomeComponent {
       id: 4,
       src: 'assets/images/service4.jpg',
       name: 'Effluent Treatment Plants',
+    },
+    {
+      id: 1,
+      src: 'assets/images/service1.jpg',
+      name: 'Demineralization & Condensation Recovery',
     },
     {
       id: 5,

@@ -10,6 +10,9 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarScrollDirective } from './core/directives/navbar-scroll.directive';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { NavbarScrollDirective } from './core/directives/navbar-scroll.directive
     FooterComponent,
     NavbarComponent,
     NavbarScrollDirective,
+    AboutComponent,
+    ContactComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideClientHydration()],
