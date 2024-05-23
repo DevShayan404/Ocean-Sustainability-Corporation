@@ -1,5 +1,6 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
+import { SharingService } from '../../core/services/sharing-data/sharing.service';
 
 @Component({
   selector: 'app-home',
@@ -16,38 +17,7 @@ import { Component } from '@angular/core';
   ],
 })
 export class HomeComponent {
-  solutionList = [
-    {
-      id: 2,
-      src: 'assets/images/service2.jpg',
-      name: 'Demineralization by EDR',
-    },
-    {
-      id: 3,
-      src: 'assets/images/service3.jpg',
-      name: 'Desalination Plants',
-    },
-    {
-      id: 4,
-      src: 'assets/images/service4.jpg',
-      name: 'Effluent Treatment Plants',
-    },
-    {
-      id: 1,
-      src: 'assets/images/service1.jpg',
-      name: 'Demineralization & Condensation Recovery',
-    },
-    {
-      id: 5,
-      src: 'assets/images/service5.jpg',
-      name: 'Heat Recovery Solutions (WHRU / Economizers)',
-    },
-    {
-      id: 6,
-      src: 'assets/images/service6.jpg',
-      name: 'Heavy Duty Fans / Blowers and Compressors',
-    },
-  ];
+  solutionList!: any[];
   vendorsList = [
     {
       src: 'assets/logos/1.png',
@@ -98,11 +68,16 @@ export class HomeComponent {
       src: 'assets/logos/16.png',
     },
   ];
-
+  constructor(private sharingService: SharingService) {}
   startYear: number = 1999;
   yearsOfWork!: number;
   ngOnInit() {
     const currentYear = new Date().getFullYear();
     this.yearsOfWork = currentYear - this.startYear;
+    this.sharingService.getSolutionData().subscribe({
+      next: (data) => {
+        this.solutionList = data;
+      },
+    });
   }
 }

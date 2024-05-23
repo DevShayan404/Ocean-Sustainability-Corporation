@@ -17,6 +17,13 @@ const routes: Routes = [
     path: 'contact-us',
     component: ContactComponent,
   },
+  {
+    path: 'solutions',
+    loadChildren: () =>
+      import('./components/services/services.module').then(
+        (m) => m.ServicesModule
+      ),
+  },
 ];
 
 @NgModule({
