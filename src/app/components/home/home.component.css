@@ -203,6 +203,7 @@
 }
 .services-area .single-service-item {
   padding-bottom: 42px;
+  cursor: pointer;
 }
 .services-area .single-service-item .img-holder {
   display: block;

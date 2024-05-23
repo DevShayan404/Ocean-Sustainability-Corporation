@@ -163,7 +163,7 @@
         data-aos="zoom-in"
         data-aos-duration="1000"
       >
-        <div class="single-service-item">
+        <div class="single-service-item" (click)="routeToServiceDetail(item)">
           <div class="img-holder">
             <img height="250" [src]="item?.src" alt="Awesome Image" />
             <div class="overlay">

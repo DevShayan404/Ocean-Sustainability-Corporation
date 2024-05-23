@@ -1,6 +1,7 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Component } from '@angular/core';
 import { SharingService } from '../../core/services/sharing-data/sharing.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -68,7 +69,7 @@ export class HomeComponent {
       src: 'assets/logos/16.png',
     },
   ];
-  constructor(private sharingService: SharingService) {}
+  constructor(private sharingService: SharingService,  private router: Router) {}
   startYear: number = 1999;
   yearsOfWork!: number;
   ngOnInit() {
@@ -77,6 +78,14 @@ export class HomeComponent {
     this.sharingService.getSolutionData().subscribe({
       next: (data) => {
         this.solutionList = data;
+      },
+    });
+  }
+  routeToServiceDetail(data: any) {
+    this.router.navigate(['solutions/detail'], {
+      queryParams: {
+        id: data?.id,
+        name: data?.name,
       },
     });
   }
