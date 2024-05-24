@@ -25,8 +25,9 @@
         <div class="service-list">
           <h5>Solution Lists</h5>
           @for (item of solutionList; track $index) {
-          <a [ngClass]="item.id === selectedId ? 'active' : 'a'"
-          (click)="routeToServiceDetail(item)"
+          <a
+            [ngClass]="item.id === selectedId ? 'active' : 'a'"
+            (click)="routeToServiceDetail(item)"
             ><span>{{ item.name }}</span>
             <i class="bi bi-arrow-right"></i>
           </a>
@@ -62,9 +63,16 @@
           </div> -->
         <div class="helpline-section">
           <div class="helpline-content text-center">
-            <h4>Need Consultancy Help</h4>
-            <p>Gatherin galso sprit moving shall flow</p>
-            <button class="btn-fill" type="submit">Contact Us</button>
+            <h4>
+              Need Product Selection <br />
+              Guide
+            </h4>
+            <p style="text-align: center; margin-top: 8px">
+              Gatherin galso sprit moving shall flow
+            </p>
+            <button routerLink="contact-us" class="btn-fill" >
+              Contact Us
+            </button>
           </div>
         </div>
       </div>

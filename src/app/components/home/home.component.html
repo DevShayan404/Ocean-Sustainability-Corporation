@@ -11,7 +11,7 @@
               data-aos="fade-right"
               data-aos-duration="1000"
             >
-              <h6>WE PROVIDE BEST SATISFIED WORK</h6>
+              <h6>WE PROVIDE BEST SATISFIED WORK SERVICES</h6>
               <h2>
                 Leading the Way in <br />
                 Industrial Solutions
@@ -95,29 +95,6 @@
               Conceptual and Front End Engineering Design (FEED) of the
               projects.
             </p>
-            <!-- <div class="about-list-item mt-30">
-              <p
-                class="highlight"
-                data-aos="fade-up-left"
-                data-aos-duration="1000"
-              >
-                Since our launch in 1995, to deliver high value project.
-              </p>
-              <p
-                class="highlight"
-                data-aos="fade-up-left"
-                data-aos-duration="2000"
-              >
-                We always provide flexible &amp; quality task.
-              </p>
-              <p
-                class="highlight"
-                data-aos="fade-up-left"
-                data-aos-duration="3000"
-              >
-                Uninque latest machinary used the industrial project.
-              </p>
-            </div> -->
             <div
               class="row founded"
               data-aos="zoom-in"
@@ -131,8 +108,7 @@
               </div>
               <div class="col-lg-8 col-md-6 col-12">
                 <div class="text">
-                  Since we established in 1999 experience &amp; still growing
-                  day by day!
+                  We have diversified 25+ experience & still growing day by day!
                 </div>
               </div>
             </div>
@@ -157,7 +133,7 @@
 
     <div class="row pt-4">
       <!--Start single service item-->
-      @for (item of solutionList; track $index) {
+      @for (item of solutionList | slice : 0 : 6; track $index) {
       <div
         class="col-md-4 col-sm-4 col-xs-12"
         data-aos="zoom-in"
@@ -191,7 +167,7 @@
         </div>
       </div>
       }
-
+      <button routerLink="solutions" class="btn-fill-border">See all</button>
       <!--End single service item-->
     </div>
   </div>

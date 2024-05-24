@@ -93,6 +93,28 @@ p {
   background-color: transparent;
   border-color: #ffffff;
 }
+.btn-fill-border {
+  position: relative;
+  z-index: 2;
+  padding: 13px 33px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  white-space: nowrap;
+  align-items: center;
+  justify-content: center;
+  color: #f35c27;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 400;
+
+  border: 1px solid;
+  border-color: #f35c27;
+  transition: all 0.3s ease-in-out;
+}
+.btn-fill-border:hover {
+  color: #ffffff;
+  background-color: #f35c27;
+}
 /*Section Padding CSS*/
 
 .section-padding {
