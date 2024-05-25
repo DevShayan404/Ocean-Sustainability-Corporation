@@ -205,9 +205,28 @@
   width: 100%;
 }
 @media (max-width: 767px) {
+  .info-content-area {
+    padding-left: 0;
+  }
   .image-two {
     bottom: -40px;
     top: auto;
+  }
+  .image-one {
+    width: 90%;
+  }
+  .image-one img {
+    width: 100%;
+  }
+  .years span {
+    font-size: 90px;
+    font-weight: 600;
+  }
+  .text {
+    font-size: 16px;
+    border-left: 0;
+    padding-left: 0;
+    margin-top: 0;
   }
 }
 /* ////////////////////////// */
@@ -328,6 +347,11 @@
   transition: 0.3s;
 }
 
+@media (max-width: 767px) {
+  .process-num {
+    right: 115px;
+  }
+}
 .process-num p {
   font-size: 18px;
   font-weight: 500;

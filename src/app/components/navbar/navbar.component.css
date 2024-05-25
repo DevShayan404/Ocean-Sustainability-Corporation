@@ -108,6 +108,19 @@
 .main-menu li.nav-item:hover > a {
   color: #fff;
 }
+/* sidebar */
+
+.offcanvas-body ul li {
+  padding: 15px;
+  border-bottom: 1px solid #c5c5c5;
+  transition: 0.2s ease-in-out;
+}
+.offcanvas-body ul li:hover {
+  color: var(--primary-color);
+}
+.offcanvas-body ul li:last-child {
+  border-bottom: 0;
+}
 /* // `md` applies to small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .header-top {

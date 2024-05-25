@@ -141,6 +141,7 @@
 }
 
 .helpline-section {
+  display: block;
   background: var(--secondary-color);
   color: #fff;
   padding: 20px;
@@ -150,7 +151,11 @@
   justify-content: center;
   align-items: center;
 }
-
+@media (max-width: 767.98px) {
+  .helpline-section {
+    display: none;
+  }
+}
 .helpline-section h4 {
   color: #fff;
   margin-top: 15px;
