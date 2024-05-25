@@ -18,7 +18,6 @@
 }
 :root {
   --secondary-color: #0a1015;
-  /* --secondary-color:  #020E28; */
   --primary-color: #f35c27;
 }
 h1,
@@ -42,7 +41,13 @@ h2 {
   font-size: 46px;
   margin-bottom: 30px;
 }
-
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+}
 h3 {
   font-size: 30px;
 }
