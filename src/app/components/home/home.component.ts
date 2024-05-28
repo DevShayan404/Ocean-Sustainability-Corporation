@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
 import { SharingService } from '../../core/services/sharing-data/sharing.service';
 import { Router } from '@angular/router';
 
@@ -69,9 +69,11 @@ export class HomeComponent {
       src: 'assets/logos/16.png',
     },
   ];
-  constructor(private sharingService: SharingService,  private router: Router) {}
   startYear: number = 1999;
   yearsOfWork!: number;
+  activeDefer!: boolean;
+  constructor(private sharingService: SharingService, private router: Router) {}
+
   ngOnInit() {
     const currentYear = new Date().getFullYear();
     this.yearsOfWork = currentYear - this.startYear;
@@ -81,6 +83,7 @@ export class HomeComponent {
       },
     });
   }
+
   routeToServiceDetail(data: any) {
     this.router.navigate(['solutions/detail'], {
       queryParams: {
@@ -88,5 +91,19 @@ export class HomeComponent {
         name: data?.name,
       },
     });
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const scrollPosition =
+      window.scrollY ||
+      window.pageYOffset ||
+      document.documentElement.scrollTop ||
+      0;
+
+    if (scrollPosition > 300) {
+      this.activeDefer = true;
+      console.log(this.activeDefer);
+    }
   }
 }

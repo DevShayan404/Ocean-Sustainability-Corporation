@@ -2,7 +2,7 @@
   <div class="banner-bg">
     <div class="overlay"></div>
     <div class="test"></div>
-    <div class="container g-0" ngx-parallax>
+    <div class="container g-0">
       <div class="row g-0">
         <div class="col-12 col-lg-6 d-flex align-items-center px-3">
           <div class="banner-info-area" style="z-index: 2">
@@ -111,7 +111,7 @@
     </div>
   </div>
 </section>
-
+@defer(when activeDefer) {
 <section class="services-area bg-light-gray">
   <div class="container">
     <div
@@ -165,7 +165,7 @@
     </div>
   </div>
 </section>
-
+} @defer(when activeDefer) {
 <section class="why-choose-us bg-white">
   <div class="container">
     <!-- Our Factory -->
@@ -308,7 +308,7 @@
     </div>
   </div>
 </section>
-
+} @defer(when activeDefer) {
 <section class="bg-light-gray">
   <div class="section-padding">
     <div class="container">
@@ -330,3 +330,4 @@
     </div>
   </div>
 </section>
+}
