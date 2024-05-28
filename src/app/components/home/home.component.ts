@@ -74,14 +74,8 @@ export class HomeComponent {
   activeDefer!: boolean;
   constructor(
     private sharingService: SharingService,
-    private router: Router,
-    private elRef: ElementRef
+    private router: Router
   ) {}
-
-  ngAfterViewInit() {
-    let loader = this.elRef.nativeElement.querySelector('#loader');
-    loader.style.display = 'none'; //hide loader
-  }
   ngOnInit() {
     const currentYear = new Date().getFullYear();
     this.yearsOfWork = currentYear - this.startYear;

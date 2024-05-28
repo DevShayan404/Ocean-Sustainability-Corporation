@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { SharingService } from '../../../core/services/sharing-data/sharing.service';
 import { Router } from '@angular/router';
-import { LoaderService } from '../../../core/services/loader-service/loader.service';
 
 @Component({
   selector: 'app-see-all',
@@ -13,7 +12,6 @@ export class SeeAllComponent {
   constructor(
     private sharingService: SharingService,
     private router: Router,
-    private loadingService: LoaderService
   ) {}
   ngOnInit() {
     this.sharingService.showNavHeader(false);

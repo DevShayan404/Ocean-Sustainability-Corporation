@@ -12,7 +12,11 @@ import { NavbarScrollDirective } from './core/directives/navbar-scroll.directive
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-import { LoaderComponent } from './components/loader/loader.component';
+import {
+  NgxUiLoaderHttpModule,
+  NgxUiLoaderModule,
+  NgxUiLoaderRouterModule,
+} from 'ngx-ui-loader';
 
 @NgModule({
   declarations: [
@@ -23,9 +27,15 @@ import { LoaderComponent } from './components/loader/loader.component';
     NavbarScrollDirective,
     AboutComponent,
     ContactComponent,
-    LoaderComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({ showForeground: true }),
+    NgxUiLoaderRouterModule.forRoot({ showForeground: true }),
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
