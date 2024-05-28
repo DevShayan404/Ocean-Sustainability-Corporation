@@ -72,8 +72,16 @@ export class HomeComponent {
   startYear: number = 1999;
   yearsOfWork!: number;
   activeDefer!: boolean;
-  constructor(private sharingService: SharingService, private router: Router) {}
+  constructor(
+    private sharingService: SharingService,
+    private router: Router,
+    private elRef: ElementRef
+  ) {}
 
+  ngAfterViewInit() {
+    let loader = this.elRef.nativeElement.querySelector('#loader');
+    loader.style.display = 'none'; //hide loader
+  }
   ngOnInit() {
     const currentYear = new Date().getFullYear();
     this.yearsOfWork = currentYear - this.startYear;
