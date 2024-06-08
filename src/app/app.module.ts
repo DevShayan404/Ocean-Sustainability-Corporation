@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import {
   BrowserModule,
   provideClientHydration,
@@ -9,14 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { NavbarScrollDirective } from './core/directives/navbar-scroll.directive';
-import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
-import {
-  NgxUiLoaderHttpModule,
-  NgxUiLoaderModule,
-  NgxUiLoaderRouterModule,
-} from 'ngx-ui-loader';
+// import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -25,16 +19,11 @@ import {
     FooterComponent,
     NavbarComponent,
     NavbarScrollDirective,
-    AboutComponent,
-    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    NgxUiLoaderModule,
-    NgxUiLoaderHttpModule.forRoot({ showForeground: true }),
-    NgxUiLoaderRouterModule.forRoot({ showForeground: true }),
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],

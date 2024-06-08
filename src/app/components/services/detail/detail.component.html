@@ -79,7 +79,7 @@
       <div class="col-lg-8">
         @for (item of solutionDetail; track $index) {
         <div class="single-service mt-0">
-          <img [src]="item?.src" alt="" />
+          <img [src]="item?.src" alt=""  loading="lazy"/>
           <h2>{{ item?.name }}</h2>
           <p>
             {{ item?.description }}
@@ -98,12 +98,12 @@
           <div class="row gy-5">
             <div class="col-md-6">
               <div class="service-page-bg">
-                <img [src]="item?.img1" alt="" />
+                <img [src]="item?.img1" loading="lazy"/>
               </div>
             </div>
             <div class="col-md-6">
               <div class="service-page-bg">
-                <img [src]="item?.img2" alt="" />
+                <img [src]="item?.img2" loading="lazy" />
               </div>
             </div>
           </div>

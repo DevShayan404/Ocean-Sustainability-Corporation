@@ -2,7 +2,7 @@
 ============== */
 
 .breadcroumb-area {
-  background-image: url("../../../assets/images/bg-secondary.webp");
+  background-image: url("../../../../assets/images/bg-secondary.webp");
 }
 
 .breadcroumb-area {
@@ -75,7 +75,7 @@
 ============== */
 
 .contact-us-area {
-  background-image: url("../../../assets/images/choose-us-bg-2.webp");
+  background-image: url("../../../../assets/images/choose-us-bg-2.webp");
   background-size: cover;
   height: 500px;
   position: relative;
@@ -131,13 +131,12 @@
 */
 
 .contact-section {
-  background-image: url("../../../assets/images/contact-bg.webp");
+  background-image: url("../../../../assets/images/contact-bg.webp");
   /* height: 80vh; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .contact-section h2 {

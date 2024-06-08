@@ -56,10 +56,10 @@
         <div class="col-lg-6 col-md-12 col-sm-12">
           <div class="about-img-wrap">
             <div class="image-one" data-aos="zoom-in" data-aos-duration="1000">
-              <img src="assets\images\about-page-2.webp" alt="" />
+              <img src="assets\images\about-page-2.webp" loading="lazy" />
             </div>
             <div class="image-two" data-aos="zoom-in" data-aos-duration="1500">
-              <img src="assets\images\about-page-1.webp" alt="" />
+              <img src="assets\images\about-page-1.webp" loading="lazy" />
             </div>
           </div>
         </div>
@@ -134,7 +134,7 @@
       >
         <div class="single-service-item" (click)="routeToServiceDetail(item)">
           <div class="img-holder">
-            <img height="250" [src]="item?.src" alt="Awesome Image" />
+            <img height="250" [src]="item?.src" loading="lazy" />
             <div class="overlay">
               <div class="box">
                 <div class="content">
@@ -144,18 +144,7 @@
             </div>
           </div>
           <div class="text-holder">
-            <!-- <div class="icon">
-              <img
-                width="40"
-                height="40"
-                src="assets\icons\factory.webp"
-                alt=""
-              />
-            </div> -->
-            <!-- <div > -->
             <h5>{{ item?.name }}</h5>
-            <!-- <p>Solution we provide.</p> -->
-            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -236,7 +225,7 @@
         </div>
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
           <figure class="image" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="assets\images\our-company.webp" alt="" />
+            <img src="assets\images\our-company.webp" loading="lazy" />
           </figure>
         </div>
       </div>
@@ -301,7 +290,7 @@
         </div>
         <div class="image-column col-lg-6 col-md-12 col-sm-12">
           <figure class="image" data-aos="zoom-in" data-aos-duration="2000">
-            <img src="assets\images\our-skill.webp" alt="" />
+            <img src="assets\images\our-skill.webp" loading="lazy" />
           </figure>
         </div>
       </div>
@@ -322,7 +311,7 @@
         @for (item of vendorsList; track $index) {
         <div class="col-4 col-lg-2">
           <figure class="vendors-img">
-            <img width="80" height="80" [src]="item.src" alt="" />
+            <img width="80" height="80" [src]="item.src" loading="lazy" />
           </figure>
         </div>
         }

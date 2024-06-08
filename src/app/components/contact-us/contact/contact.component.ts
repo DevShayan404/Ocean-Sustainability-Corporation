@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SharingService } from '../../core/services/sharing-data/sharing.service';
+import { SharingService } from '../../../core/services/sharing-data/sharing.service';
 
 @Component({
   selector: 'app-contact',
